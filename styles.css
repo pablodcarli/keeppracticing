@@ -1,0 +1,30 @@
+h1 { 
+    color: orange; 
+}
+b {
+    color: blue;
+}
+div {
+    background-color: yellow;
+    align-items: center;
+    padding: 100;
+    response: auto;
+    align: right;
+    text-align: center;
+}
+.pPero {
+    background-color: blue;
+    align-items: center;
+    padding: 100;
+    response: auto;
+    align: right;
+    text-align: center;
+}
+span {
+    color: purple;
+}
+
+hr {
+    color: blue;
+}
+
