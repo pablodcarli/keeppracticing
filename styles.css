@@ -1,86 +1,77 @@
-/*global*/
-/*
+/* general rules */
 * {
-    font-family: playfair;
-    margin: 0px;
-    padding: 0px;
-    background-color: #fff;
-    box-sizing: border-box;
-  }
-*/
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1;
+}
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  color:rebeccapurple;
+}
+p {
+  margin: 0 0 1.5rem 0;
+  line-height: 1.5;
+  max-width: 80ch;
+}
 
-/* body {
-  display:grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-area:
-    "head head head"
-    "nav main main"
-    "nav foot foot";
-    grid-template-columns:0.5fr 1fr 1fr;
-    grid-template-rows:repeat (3 fr);
-}*/
+/* components */
+.header {
+  background: rebeccapurple;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
-/* @media (min-width: 100vw) {
-  body {
-    display:grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-area:
-    "head head head"
-    "nav main main"
-    "nav foot foot";
-    grid-template-columns:0.5fr 1fr 1fr;
-    grid-template-rows:repeat (4 1fr);
-  }
-}*/
+article {
+  outline: 3px solid yellow;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
 
-
-
-img {
-  max-width:80vw;
+.article-title {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 
 .container {
-  padding: 10px;
-  width: calc(90% - 30px);
-  background-color: pink;
-  color: white;
+  max-width: 80ch;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  
+  /* flexbox */
+  display: grid;
+  grid-template-columns:3;
+  grid-template-rows: repeat (3, 1fr);
+  gap: 20px;
 }
 
-.box {
-  background: linear-gradient(
-        105deg,
-        rgba(255, 255, 255, 0.2) 39%,
-        rgba(51, 56, 57, 1) 96%
-      ) center center / 400px 200px no-repeat, url(big-star.png) center
-      no-repeat, rebeccapurple;
+.hero {
+  display: flex;
+  flex-direction: column;
+  /* centers vertically */
+  justify-content: center;
+  /* centers horizontally */
+  align-items: center;
 }
 
+#contact {
+  display: flex;
+  gap: 20px;
 
-
-div {
-  border: 1px solid white;
-  }
-
-h1 {
-  color: lime;
-  background-color: black;
-  border: 1px solid black;
 }
 
-h2 {
-  color: yellow;
-  background-color: orangered;
-  border: 2px solid black;
+img {
+  width:100%;
 }
-
-p {
-  color: red;
-}
-
-
-
-
- 
-
